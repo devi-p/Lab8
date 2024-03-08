@@ -42,7 +42,6 @@ public class CustomList extends ArrayAdapter<City> {
         provinceName.setText(city.getProvinceName());
 
         return view;
-
     }
 
     /** *this gets size of the list
@@ -55,5 +54,15 @@ public class CustomList extends ArrayAdapter<City> {
     public void addCity(City city){
         cities.add(city);
     }
+
+    /**
+     * Check if the list contains a specific city.
+     * @param city The city to check for.
+     * @return True if the city is in the list, false otherwise.
+     */
+    public boolean hasCity(City city){
+        return false;
+    }
+
 
 }
